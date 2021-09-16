@@ -24,7 +24,7 @@ public class Make_Appointment_Test
 	
 	
 	@Test
-	public void run_Make_Appointment_Test() throws IOException
+	public void run_Make_Appointment_Test() throws IOException, InterruptedException
 	{
 	
 		Make_Appointment_Page Map = new Make_Appointment_Page(br.driver);
@@ -35,6 +35,7 @@ public class Make_Appointment_Test
 		Map.Medicare_radio_btn();
 		Map.Visit_Date_Calender();
 		Map.Enter_Comment();
+		Thread.sleep(3000);
 		Map.Book_appointment();
 	}	
 	

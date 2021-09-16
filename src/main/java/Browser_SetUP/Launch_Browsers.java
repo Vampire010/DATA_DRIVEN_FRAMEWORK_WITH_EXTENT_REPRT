@@ -34,6 +34,13 @@ public static  WebDriver driver;
 			driver = new FirefoxDriver();
 			driver.get(Url);			
 		}
+		
+		else if(browser_Type.equals("edge"))
+		{				
+			System.setProperty("webdriver.edge.driver", "/Users/girishg/eclipse-workspace/PGAE_OBJECT_MODEL_FRAMEWORK_POM/Browser_Drivers/msedgedriver");
+			driver = new EdgeDriver();
+			driver.get(Url);			
+		}
 			
 		else 
 		{				

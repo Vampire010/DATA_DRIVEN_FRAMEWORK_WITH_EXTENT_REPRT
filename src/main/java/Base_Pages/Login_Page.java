@@ -26,7 +26,7 @@ public class Login_Page
 	@FindBy(xpath="//*[@id=\"btn-login\"]")
 	WebElement logBtn;
 	
-	DataDriven a=new DataDriven();
+	DataDriven a = new DataDriven();
 
 	
 	public Login_Page(WebDriver d)
@@ -45,12 +45,15 @@ public class Login_Page
 	
 	public void setusernames() throws IOException
 	{		
-		setusername.sendKeys(a.getdata("sname", 1, 0));		
+		setusername.sendKeys(a.getdata("sname", 1, 0));	
+		System.out.println(a.getdata("sname", 1, 0));
+
 	}
 	
 	public void setpasswords() throws IOException
 	{		
 		setpassword.sendKeys( a.getdata("sname", 1, 1));	
+		System.out.println(a.getdata("sname", 1, 1));
 	}
 	public void ClicklogBtn()
 	{		

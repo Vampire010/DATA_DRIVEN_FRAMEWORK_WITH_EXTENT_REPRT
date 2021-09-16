@@ -15,6 +15,7 @@ public class Login_test
 	
 	String URL = "https://katalon-demo-cura.herokuapp.com/";
 	String Browser = "chrome";
+	
 	Launch_Browsers br = new Launch_Browsers();
 	Extent_reprts rep_gen = new Extent_reprts();
 	
@@ -37,7 +38,7 @@ public class Login_test
 		lp.setpasswords();
 		lp.ClicklogBtn();
 		
-		rep_gen.Report_Genraters("Login_Page_Test" , "Pass" );
+		rep_gen.Report_Genraters("run_login_test" , "Pass" );
 
 	}	
 	
@@ -46,8 +47,6 @@ public class Login_test
 	{
 		System.out.println(br.driver.getTitle());	
 		br.driver.close();
-
-		
 	}
 
 }
